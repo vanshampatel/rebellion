@@ -1,0 +1,316 @@
+@font-face {
+    font-family:rebellion;
+    src: url(CommutersSans-Bold.291c6e58.ttf);
+}
+@font-face {
+    font-family:heavy;
+    src: url(CommutersSans-Heavy.a3ab1120.ttf);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family:heavy;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F5F2EE;
+    position: relative;
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+.navpart1>svg{
+    height: 50px;
+}
+.navpart2>h2{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-weight: 960;
+}
+.navpart3{
+    height: 25px;
+    width: 25px;
+    border-left: 2px solid black;
+    /* background-color: green; */
+    border-bottom: 2px solid black;
+}
+.center-txt{
+    height: 50vh;
+    width: 80%;
+    position: relative;
+    /* background-color: yellowgreen; */
+    margin: 8vw 10vw;
+}
+.center-txt>h1{
+    font-size: 6.5vw;
+    text-align: center;
+    line-height: 5.8vw;
+    word-spacing: -2px;
+}
+.arrows{
+    height: 40px;
+    width: 100%;
+    padding: 0 30px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sqre{
+    height: 25px;
+    width: 25px;
+    border-left: 2px solid black;
+    /* background-color: rgb(15, 97, 192); */
+    border-bottom: 2px solid black;
+}
+.stickers-div{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    /* background-color: rgba(20, 182, 20, 0.404); */
+    top: 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    position: relative;
+    height: 12vw;
+    width: 11vw;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease-in 1s;
+}
+.boxes>img{
+    height: 40px;
+}
+.boxes:hover{
+    opacity: 1;
+    scale:1.5;
+    transition: all ease-in .2s;
+
+}
+.paragraph{
+    height: 40vh;
+    width: 95%;
+    margin-left: 2.5%;
+    border-bottom: 1px solid black;
+    /* background-color:pink; */
+    position: relative;
+}
+.paragraph>p{
+    font-size:2vw;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: -2px;
+}
+.page2{
+    min-height: 250vh;
+    width: 100%;
+    background-color: #F5F2EE;
+    position: relative;
+}
+.page2>h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    padding-top: 5vw;
+    padding-left: 2vw;
+}
+.video-tg{
+    height: 80vh;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+    margin-top: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.video-tg>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.vidtxt{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    top: 0;
+    position: absolute;
+}
+.arrow{
+    height: 40px;
+    width: 95%;
+    /* background-color: khaki; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px 2.5%;
+}
+.arwss{
+    height: 30px;
+    width: 30px;
+    /* background-color: teal; */
+    border-right: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235) ;
+}
+.arwss2{
+    height: 30px;
+    width: 30px;
+    /* background-color: teal; */
+    border-left: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235) ;
+}
+.centertxt{
+    height: 80%;
+    width: 60%;
+    /* background-color: green; */
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.centertxt>img{
+    height: 120px;
+    padding-bottom: 2vw;
+}
+.centertxt>h3{
+    font-size: 5vw;
+    letter-spacing: -2px;
+    line-height: 5vw;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.footer{
+    padding-top: 4vw;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-color: #F5F2EE;
+}
+.blocks{
+    height: 53%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block1{
+    height: 100%;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid  black;
+    border-bottom: 1px solid black;
+}
+.block1>svg{
+    height: 50%;
+}
+.block2{
+    height: 100%;
+    width: 60%;
+    border-top: 1px solid  black;
+    border-bottom: 1px solid black;
+}
+.row1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.nous>h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: rebellion;
+    letter-spacing: -2px;
+}
+.nous>h2{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: rebellion;
+}
+.row1>h5{
+    font-size: 1vw;
+    font-family: rebellion;
+
+}
+.row2{
+        height: 40%;
+        width: 100%;
+        margin-top: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  30px 60px;
+}
+.link>h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-family: rebellion;
+    text-transform: uppercase;
+}
+.link2>h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-family: rebellion;
+    text-transform: uppercase;
+}
+.link3>h2{
+    font-size: 0.8vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-family: rebellion;
+    text-transform: uppercase;
+}
+.rebellion{
+    height: 16vw;
+    width: 100%;
+    /* background-color: lime; */
+}
+.rebellion>h1{
+    font-size: 15.2vw;
+    text-transform: uppercase;
+}
+.footerflex{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.footerflex>h5{
+    font-family: rebellion;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.7vw;
+}
